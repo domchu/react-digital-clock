@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Clock = () => {
-    return (
-      
-        let time = new Date().toLocaleTimeString();
+  let time = new Date().toLocaleTimeString();
+  const [currentTime, setCurrentTime] = useState(time);
+  return (
     <div className="page__container">
       <div>
         <h1>Digital Clock</h1>
-            <h2>{ time}</h2>
+        <h2>{currentTime}</h2>
       </div>
     </div>
   );
