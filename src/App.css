@@ -25,7 +25,7 @@ h1 {
   text-align: center;
 }
 h2 {
-  border: 2px solid;
+  border: 2px solid cornsilk;
   width: 350px;
   border-radius: 5px;
   text-align: center;
@@ -33,4 +33,5 @@ h2 {
   font-size: 3rem;
   color: #a52a2a;
   background-color: cornsilk;
+  letter-spacing: 5px;
 }

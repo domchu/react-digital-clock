@@ -15,6 +15,7 @@ const Clock = () => {
       <div>
         <h1>Digital Clock</h1>
         <h2>{currentTime}</h2>
+        {/* <span className="am__pm">AM</span> */}
       </div>
     </div>
   );
