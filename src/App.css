@@ -3,6 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background: url("Assets/clock.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
 .page__container {
   display: flex;
   justify-content: center;
@@ -13,12 +20,15 @@
 }
 h1 {
   margin: 3rem 0;
+  font-size: 3rem;
+  color: cornsilk;
 }
 h2 {
   border: 2px solid;
-  width: 250px;
+  width: 350px;
   border-radius: 5px;
   text-align: center;
   padding: 20px 0;
+  font-size: 3rem;
   background-color: cornsilk;
 }
