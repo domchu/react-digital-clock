@@ -4,11 +4,13 @@ const Clock = () => {
   let time = new Date().toLocaleTimeString();
   const [currentTime, setCurrentTime] = useState(time);
 
+  //updating the state every time
   const updateTime = () => {
     let time = new Date().toLocaleTimeString();
     setCurrentTime(time);
   };
 
+  //the useEffect is the same as the setTimeout function
   useEffect(() => {
     setInterval(updateTime, 1000);
   }, []);
