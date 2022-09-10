@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Clock = () => {
   let time = new Date().toLocaleTimeString();
@@ -9,7 +9,10 @@ const Clock = () => {
     setCurrentTime(time);
   };
 
-  setInterval(updateTime, 1000);
+  useEffect(() => {
+    setInterval(updateTime, 1000);
+  }, []);
+
   return (
     <div className="page__container">
       <div>
